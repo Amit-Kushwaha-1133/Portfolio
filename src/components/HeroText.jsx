@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 
 const HeroText = () => {
   const words = ["Secure", "Modern", "Scalable"];
+  const wordsname = ["Amit Kushwaha"];
   const variants = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
@@ -18,7 +19,11 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi I'm Ali
+          Hi I'm <br/>
+           <FlipWords
+              words= {wordsname}
+              className="font-black text-white text-6xl"
+            />
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
@@ -61,7 +66,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi,I'm Ali
+          Hi,I'm Amit Kushwaha
         </motion.p>
         <div>
           <motion.p
